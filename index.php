@@ -8,8 +8,6 @@ include_once 'dbconnect.php';
 	<title>Home | GPS Tracker</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-	
-	
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -19,14 +17,6 @@ include_once 'dbconnect.php';
     <script src="js/leaflet-plugins/google.js"></script>
     <script src="js/leaflet-plugins/bing.js"></script>
 	<link rel="stylesheet" href="js/leaflet-0.7.5/leaflet.css">    
-    <!-- 
-        to change themes, select a theme here:  http://www.bootstrapcdn.com/#bootswatch_tab 
-        and then change the word after 3.2.0 in the following link to the new theme name
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cerulean/bootstrap.min.css">
-    -->    
-	
-    
-	
 </head>
 <body>
 
@@ -56,9 +46,6 @@ include_once 'dbconnect.php';
 		</div>
 	</div>
 </nav>
-	
-
-	
 	
 	
 <?php if (isset($_SESSION['usr_id'])) {	?>	
@@ -90,7 +77,7 @@ include_once 'dbconnect.php';
                 <select id="routeSelect" tabindex="1"></select>
             </div>
         </div>
-			<!--
+		<!--
         <div class="row">
             <div class="col-sm-3 deletediv">
                 <input type="button" id="delete" value="Delete" tabindex="2" class="btn btn-primary">
@@ -105,7 +92,7 @@ include_once 'dbconnect.php';
                 <input type="button" id="viewall" value="View All" tabindex="5" class="btn btn-primary">
             </div>
         </div>
--->
+		-->
     </div>  
 <?php } else {	?>
 		<div class="container-fluid">
@@ -117,7 +104,6 @@ include_once 'dbconnect.php';
 			</div>
 		</div>
 <?php } ?>
-	
 	
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.min.js"></script>

@@ -58,10 +58,6 @@
                           :eventtype);'
                       );
             break;
-        case DB_POSTGRESQL:
-        case DB_SQLITE3:
-            $stmt = $pdo->prepare('INSERT INTO gpslocations (latitude, longitude, speed, direction, distance, gpsTime, locationMethod, userName, phoneNumber,  sessionID, accuracy, extraInfo, eventType) VALUES (:latitude, :longitude, :speed, :direction, :distance, :date, :locationmethod, :username, :phonenumber, :sessionid, :accuracy, :extrainfo, :eventtype)');
-            break;
     }  
     $stmt->execute($params);
     $timestamp = $stmt->fetchColumn();

@@ -54,7 +54,7 @@
         
         $.ajax(
         {
-            url: 'get_session.php',
+            url: 'getsession.php',
             cache: false
         })
         .done(function(result)
@@ -82,7 +82,7 @@
         
         $.ajax(
         {
-            url: 'get_session.php',
+            url: 'getsession.php',
             cache: false
         })
         .done(function(result)

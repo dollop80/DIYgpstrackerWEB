@@ -4,7 +4,7 @@ import time
 import math
 from datetime import datetime
 
-upload_script = 'http://10.0.0.11/gpstracker/updatelocation.php'
+upload_script = 'http://vhost3800.cpsite.ru/updatelocation.php'
 username = 'python'
 session_id = str(int(random.random()*1000))+'-'+str(int(random.random()*1000))+'-'+str(int(random.random()*1000))
 nmea = 12345678900987654321
